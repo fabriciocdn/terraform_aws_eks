@@ -5,6 +5,10 @@ repos:
   - id: terraform_fmt
     args:
       - --args=-recursive
+  - id: terraform_validate
+  # args:
+  #   - --tf-init-args=-upgrade
+  #   - --tf-init-args=-lockfile=readonl
 # -   repo: https://github.com/psf/black
 #     rev: 22.10.0
 #     hooks:
