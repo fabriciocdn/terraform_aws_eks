@@ -7,7 +7,7 @@ resource "aws_route_table" "eks_public_route_table" {
   }
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "eks-public-route-table"
     }

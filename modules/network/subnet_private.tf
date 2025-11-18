@@ -5,7 +5,7 @@ resource "aws_subnet" "eks_subnet_private_1a" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name                              = "eks-vpc"
       Name                              = "subnet-private-1a"
@@ -23,7 +23,7 @@ resource "aws_subnet" "eks_subnet_private_1b" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name                              = "eks-vpc"
       Name                              = "subnet-private-1b"
