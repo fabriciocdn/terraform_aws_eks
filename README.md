@@ -32,6 +32,8 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | Networking block for subnet in vpc | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | AWS region where you will create your resources | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags for your resources project | `map` | n/a | yes |
 
 ## Outputs
 
