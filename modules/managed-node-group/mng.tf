@@ -8,7 +8,7 @@ resource "aws_eks_node_group" "eks-mng-node-group" {
     var.eks_subnet_private_1b
   ]
 
-  instance_types = var.instance_type
+  instance_types = var.instance_types
   scaling_config {
     desired_size = 1
     max_size     = 1
