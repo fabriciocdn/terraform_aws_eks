@@ -14,3 +14,8 @@ variable "eks_subnet_private_1b" {
   type        = string
   description = "EKS cluster subnet private 1b"
 }
+
+variable "mng_instance_types" {
+  type        = list(string)
+  description = "Managed node group instance types"
+}
