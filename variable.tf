@@ -14,3 +14,8 @@ variable "tags" {
   description = "Tags for your resources project"
 
 }
+
+variable "instance_types" {
+  type        = list(string)
+  description = "Tipo de instância para os nós"
+}
